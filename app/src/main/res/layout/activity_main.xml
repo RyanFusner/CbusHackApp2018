@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="false"
+    android:layout_alignParentEnd="false"
+    android:layout_alignParentTop="false"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.ryan.cbushackapp2018.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="246dp">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/nameBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/victimLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Victim"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/victimBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/bullyLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Bully"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/bullyBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/dateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timeLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Time"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/locationLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Location"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/locationBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/descLabel"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:autoSizeTextType="uniform"
+                android:text="Description"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+            <EditText
+                android:id="@+id/descBox"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:ems="10"
+                android:inputType="textMultiLine|textPersonName"
+                android:singleLine="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="0.1"
+        android:baselineAligned="false"
+        android:measureWithLargestChild="false"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Submit"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/switchButon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Teacher View" />
+    </LinearLayout>
+</LinearLayout>
